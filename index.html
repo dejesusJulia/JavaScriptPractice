@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Activities</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
+    <script type="module" src="js/script.js" defer></script>
+</head>
+<body>
+    <h1 class="text-center">Javascript Cardio</h1>
+    <div class="container row m-auto">
+        <section class="col-md-8 m-auto">
+            <!-- 1. PALINDROMES -->
+            <div class="card mb-5" id="palindrome-card">
+                <div class="card-header">
+                    <div class="clearfix">
+                        <h3 class="float-left">Palindromes</h3>
+                        <button class="btn btn-danger float-right btn-sm" id="resetpalbtn" type="reset" >Reset</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <p class="text-justify">
+                            <strong>Palindrome</strong> is a word, number, phrase or other sequence of characters which reads the same backward as forward.
+                        </p>
+                    </div>
+                    <div class="card-title">
+                        Enter a word here:
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="text" name="" id="palindromeInput" class="form-control" placeholder="Input here">
+                                <div class="input-group-prepend">
+                                    <button id="palBtn" class="btn btn-primary" type="button" >=</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="palindromeOutput" id="palindromeOutput" class="form-control" disabled>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- INSERT MESSAGE HERE (JS) -->
+            </div>
+
+            <!-- 2. LEAP YEAR -->
+            <div class="card mb-5" id="leapYear-card">
+                <div class="card-header">
+                    <div class="clearfix">
+                        <h3 class="float-left">Leap Year</h3>
+                        <button class="float-right btn btn-danger btn-sm" id="leapResetBtn" type="reset">Reset</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <strong class="card-title">Did you know?</strong>
+                        <p class="text-justify">Leap year does not necessarily occur every four years. Centurial years (such as 1700, 1800, 1900) are skipped, except when they are divisible by 400 (such as 1600 and 2000). Try entering a year below!</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" name="" id="inputYear" class="form-control" placeholder="Enter year 1582 or above">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary" id="leapYear-btn" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSERT MESSAGE HERE (JS) -->
+            </div>
+
+            <!-- 3. PRIME OR COMPOSITE -->
+            <div class="card mb-5" id="primeComposite-card">
+                <div class="card-header">
+                    <div class="clearfix">
+                        <h3 class="float-left">Prime or Composite</h3>
+                        <button id="primeReset-btn" class="btn btn-danger btn-sm float-right" type="reset" >Reset</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <p class="text-justify">
+                            <strong class="card-title">Prime Numbers</strong> are numbers that have no other factors aside from one and itself, while <strong class="card-title">Composite Numbers</strong> are numbers that have more than two factors. Try an number below!
+                        </p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" name="" id="primeInput" class="form-control" placeholder="Enter the number here">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary" id="prime-btn" type="submit" >See Results</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSERT MESSAGE HERE (JS) -->
+            </div>
+            
+            <!-- 4. FLAMES -->
+            <div class="card mb-5" id="flames-card">
+                <div class="card-header">
+                    <div class="clearfix">
+                        <h3 class="float-left">FLAMES</h3>
+                        <button id="resetFlames" class="btn btn-sm btn-danger float-right" type="reset" >Reset</button>
+                    </div>
+                </div>
+        
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <p class="text-justify">
+                            <strong>FLAMES</strong> is game kids used to play to "test their compatibility" with their crushes or idols. The acronym stands for:  
+                            <ul class="list-unstyled">
+                                <li>Friends</li>
+                                <li>Lovers</li>
+                                <li>Acquaintances</li>
+                                <li>Married</li>
+                                <li>Enemies</li>
+                                <li>Strangers</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="card-title">
+                        Enter your names here!
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="person1Name" name="person1Name" class="form-control" placeholder="enter name of person 1 here">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="person2Name" name="person2Name" class="form-control" placeholder="enter name of person 2 here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submitFlames" class="btn btn-primary btn-block" type="submit">Submit</button>
+                    </div>
+                </div>
+                <!-- INSERT MESSAGE HERE (JS) -->
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
